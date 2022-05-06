@@ -12,37 +12,7 @@ public class Trie {
 
     public Trie() {
         root = new TrieNode(' ');
-        try {
-            FileReader fileReader = new FileReader("E:\\Javafx\\DictionaryApplication\\Batman.txt");
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String read = "";
-            String word = "";
-            String definition = "";
-            int line = 0;
-            while ((read = bufferedReader.readLine()) != null) {
-                line++;
-                if (read.startsWith("@")) {
-                    word = read.replace("@", "");
-                } else if (read.equals("")) {
-                    this.insert(word);
-                    if (!words.contains(word)) {
-                        words.add(word);
-                    }
-                    word = "";
-                    definition = "";
-                } else {
-                    definition = definition + read + "\n";
-                }
-            }
-            if (!words.contains(word)) {
-                this.insert(word);
-                words.add(word);
-            }
-            bufferedReader.close();
-            fileReader.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
 
     public void insert(String word) {

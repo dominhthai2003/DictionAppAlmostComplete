@@ -15,19 +15,15 @@ public class Dictionary {
      * words: words for functions in basicDictionary.
      */
     private List <Word> wordList = new ArrayList<>();
-    protected List <String> words = new ArrayList<>(); // this one has no meaning at all!!!
-
-
-//    int search(String s) {
-//        Word toSearch = new Word(s.trim());
-//       int i = Collections.binarySearch(words, toSearch);
-//       return i;
-//   }
+    protected List <String> words = new ArrayList<>();
 
     public List<Word> getWordList() {
         return wordList;
     }
 
+    public List<String> getWords() {
+        return words;
+    }
 
     public void sortWords() {
         Collections.sort(wordList);

@@ -7,18 +7,35 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#buttonChangeDefinition" prefHeight="674.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#buttonChangeDefinition" prefHeight="585.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label alignment="CENTER" layoutX="217.0" layoutY="14.0" prefHeight="79.0" prefWidth="398.0" text="Dictionary" textFill="#0ef04f">
+      <Label alignment="CENTER" layoutX="219.0" prefHeight="79.0" prefWidth="398.0" text="Dictionary" textFill="#0ef04f">
          <font>
             <Font name="Elephant" size="40.0" />
          </font>
       </Label>
-      <Button layoutX="399.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#buttonFind" prefHeight="25.0" prefWidth="226.0" text="Find a word" />
-      <TextField fx:id="textWord" layoutX="14.0" layoutY="113.0" prefHeight="25.0" prefWidth="286.0" promptText="Insert your word" />
-      <Button layoutX="399.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#buttonRemove" prefHeight="25.0" prefWidth="226.0" text="Remove a word" />
-      <Button layoutX="399.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#buttonAdd" prefHeight="25.0" prefWidth="226.0" text="Add a word" />
-      <ListView fx:id="recommendedWordList" layoutX="14.0" layoutY="138.0" onKeyReleased="#keyRelease" prefHeight="438.0" prefWidth="286.0" />
-      <Button layoutX="399.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#buttonChangeDefinition" prefHeight="25.0" prefWidth="226.0" text="Change the defintion" />
+      <Button alignment="CENTER" layoutX="399.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#buttonFind" prefHeight="45.0" prefWidth="243.0" text="Find a word" textFill="#ff1500">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="textWord" layoutX="14.0" layoutY="113.0" onKeyReleased="#keyRelease" prefHeight="25.0" prefWidth="286.0" promptText="Insert your word" />
+      <Button alignment="CENTER" layoutX="399.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#buttonRemove" prefHeight="45.0" prefWidth="243.0" text="Remove a word" textFill="#ff1500">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="399.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#buttonAdd" prefHeight="45.0" prefWidth="243.0" text="Add a word" textFill="#ff1500">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font></Button>
+      <ListView fx:id="recommendedWordList" layoutX="14.0" layoutY="138.0" prefHeight="438.0" prefWidth="286.0" />
+      <Button alignment="CENTER" layoutX="399.0" layoutY="394.0" mnemonicParsing="false" onMouseClicked="#buttonChangeDefinition" prefHeight="45.0" prefWidth="243.0" text="Change the defintion" textFill="#ff1500">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="399.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#buttonAPI" prefHeight="45.0" prefWidth="243.0" text="Translate the text" textFill="#ff1500">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -6,6 +6,8 @@ import java.util.List;
 
 public class TrieNode {
     char data;
+
+    //Trong TrideNode cua children chua rat nhieu TrideNode children khac
     LinkedList<TrieNode> children;
     TrieNode parent;
     boolean isEnd;
@@ -44,6 +46,7 @@ public class TrieNode {
         if (parent == null) {
             return "";
         } else {
+            //Them cac ky tu dang con thieu dang char vao roi chuyen no thanh dang string
             return parent.toString() + new String(new char[] {data});
         }
     }
